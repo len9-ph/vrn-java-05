@@ -20,7 +20,7 @@ public class ReverseInteger {
                 inputNumber /= 10;
             }
             else {
-                throw new RuntimeException("This number can't be reversed!");
+                throw new BiggerThenIntException("This number can't be reversed!");
             }
         }
         return reverseNumber;

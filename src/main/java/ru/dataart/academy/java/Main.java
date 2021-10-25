@@ -9,7 +9,7 @@ public class Main {
             System.out.println("Reverse integer works for big negative value: " + reverseInteger.reverse(-2147483648));
             System.out.println("Reverse integer works for big positive value: " + reverseInteger.reverse(2147483647));
         }
-        catch (RuntimeException exc) {
+        catch (BiggerThenIntException exc) {
             System.out.println(exc.getMessage());
         }
 
